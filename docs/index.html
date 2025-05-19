@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>易企签智能文档编辑器 - 一站式文档处理平台</title>
+  <meta name="description" content="一个本土化开源智能文档编辑平台，支持多种文档类型编辑和预览，包括 Word、Excel、PPT、Markdown、思维导图和流程图。" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" />
+  <link rel="icon" href="./images/favicon.ico" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <img src="./images/logo.png" width="50" alt="易企签智能文档编辑器 Logo" />
+        <h1>易企签智能文档编辑器</h1>
+      </div>
+      <nav class="nav">
+        <ul style="display: flex; align-items: center; list-style: none; padding: 0;">
+          <li><a href="#features">核心功能</a></li>
+          <li><a href="#tech">技术架构</a></li>
+          <li><a href="#start">快速开始</a></li>
+          <li><a href="#contribute">参与贡献</a></li>
+          <li style="margin-left: auto;">
+            <a href="https://docs.signit.cn" target="_blank" class="btn-demo">在线体验</a>
+          </li>
+          <li style="margin-left: 10px;">
+            <a href="https://github.com/SignitDoc/open-editor" target="_blank" class="btn-github"><i
+                class="ri-github-fill"></i> GitHub</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="menu-toggle">
+        <i class="ri-menu-line"></i>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h2>一站式开源文档编辑平台</h2>
+        <p>
+          集成
+          Word、Excel、PPT、Markdown、思维导图和流程图六大文档类型的编辑与预览功能，提供统一的用户界面和操作体验，消除不同软件间切换的繁琐。
+        </p>
+        <div class="hero-buttons">
+          <a href="https://docs.signit.cn" target="_blank" class="btn btn-primary">立即体验</a>
+          <a href="https://github.com/SignitDoc/open-editor" target="_blank" class="btn btn-secondary"><i
+              class="ri-github-fill"></i> GitHub 仓库</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="./images/hero-image.png" alt="易企签智能文档编辑器界面预览" />
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="features">
+    <div class="container">
+      <h2 class="section-title">核心功能</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="ri-file-word-2-line"></i></div>
+          <h3>Word 文档编辑</h3>
+          <ul>
+            <li>富文本编辑：支持各种文本样式和格式</li>
+            <li>电子签名：内置 Vue3-esign 签名组件</li>
+            <li>智能目录：自动生成可导航文档目录</li>
+            <li>内容模板：预设常用内容库</li>
+            <li>安全水印：自定义文档保护水印</li>
+          </ul>
+          <div class="feature-image">
+            <img src="./images/word.png" alt="Word 编辑器预览" />
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="ri-file-excel-2-line"></i></div>
+          <h3>Excel 表格处理</h3>
+          <ul>
+            <li>公式计算：支持常用 Excel 函数</li>
+            <li>数据操作：排序、筛选、条件格式</li>
+            <li>图表生成：多种数据可视化图表</li>
+          </ul>
+          <div class="feature-image">
+            <img src="./images/excel.png" alt="Excel 编辑器预览" />
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="ri-file-ppt-2-line"></i></div>
+          <h3>PPT 演示文稿</h3>
+          <ul>
+            <li>元素类型：支持文字、图片、形状、线条等</li>
+            <li>动画效果：元素动画和切换效果</li>
+            <li>演示模式：全屏展示支持</li>
+          </ul>
+          <div class="feature-image">
+            <img src="./images/ppt.png" alt="PPT 编辑器预览" />
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="ri-markdown-line"></i></div>
+          <h3>Markdown 编辑</h3>
+          <ul>
+            <li>双栏视图：实时编辑预览</li>
+            <li>语法高亮：完整 Markdown 支持</li>
+            <li>交互友好：支持所见即所得模式</li>
+          </ul>
+          <div class="feature-image">
+            <img src="./images/markdown.png" alt="Markdown 编辑器预览" />
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="ri-mind-map"></i></div>
+          <h3>思维导图</h3>
+          <ul>
+            <li>节点操作：自由添加/编辑节点</li>
+            <li>多种布局：树形、逻辑图等</li>
+            <li>主题定制：丰富样式选择</li>
+          </ul>
+          <div class="feature-image">
+            <img src="./images/mindMap.png" alt="思维导图编辑器预览" />
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="ri-flow-chart"></i></div>
+          <h3>流程图</h3>
+          <ul>
+            <li>图形元素：标准流程图组件</li>
+            <li>智能连线：自动路径规划</li>
+            <li>导出分享：支持 PNG/SVG 等格式</li>
+          </ul>
+          <div class="feature-image">
+            <img src="./images/flowChart.png" alt="流程图编辑器预览" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tech" class="tech">
+    <div class="container">
+      <h2 class="section-title">技术架构</h2>
+      <div class="tech-content">
+        <div class="tech-core">
+          <h3>核心框架</h3>
+          <div class="tech-grid">
+            <div class="tech-item">
+              <div class="tech-icon"><i class="ri-vuejs-line"></i></div>
+              <h4>Vue 3</h4>
+              <p>前端框架</p>
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon"><i class="ri-code-s-slash-line"></i></div>
+              <h4>TypeScript</h4>
+              <p>开发语言</p>
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon"><i class="ri-database-2-line"></i></div>
+              <h4>Pinia</h4>
+              <p>状态管理</p>
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon"><i class="ri-rocket-line"></i></div>
+              <h4>Vite</h4>
+              <p>构建工具</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="start" class="start">
+    <div class="container">
+      <h2 class="section-title">快速开始</h2>
+      <div class="start-content">
+        <div class="start-requirements">
+          <h3>系统要求</h3>
+          <ul>
+            <li>Node.js v18+</li>
+          </ul>
+        </div>
+        <div class="start-steps">
+          <h3>开发流程</h3>
+          <div class="code-block">
+            <pre><code># 克隆仓库
+git clone https://github.com/SignitDoc/open-editor.git && cd open-editor
+
+# 更换.npmrc中的tiptap-pro的token值
+//registry.tiptap.dev/:_authToken=自己申请的token
+
+# 安装依赖
+npm install
+
+# 启动开发服务器
+npm run dev</code></pre>
+          </div>
+        </div>
+        <div class="start-docker">
+          <h3>Docker 部署</h3>
+          <div class="code-block">
+            <pre><code># 编译项目
+npm run build
+
+# 构建 Docker 镜像
+docker build -t open-editor:latest .
+
+# 运行 Docker 容器
+docker run -d -p 8080:80 --name open-editor open-editor:latest
+
+# 访问应用
+# 打开浏览器访问 http://localhost:8080</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contribute" class="contribute">
+    <div class="container">
+      <h2 class="section-title">参与贡献</h2>
+      <div class="contribute-content">
+        <div class="contribute-item">
+          <h3><i class="ri-code-s-slash-line"></i> 代码贡献</h3>
+          <ul>
+            <li>提交 Pull Request 修复问题或添加功能</li>
+            <li>确保代码符合项目编码规范</li>
+            <li>为新功能添加相应的单元测试</li>
+          </ul>
+        </div>
+        <div class="contribute-item">
+          <h3><i class="ri-bug-line"></i> 问题报告</h3>
+          <ul>
+            <li>
+              在 <a href="https://github.com/SignitDoc/open-editor/issues" target="_blank">GitHub Issues</a> 提交问题
+            </li>
+            <li>清晰描述问题现象和复现步骤</li>
+          </ul>
+        </div>
+        <div class="contribute-item">
+          <h3><i class="ri-file-text-line"></i> 文档改进</h3>
+          <ul>
+            <li>完善使用文档和开发指南</li>
+            <li>翻译多语言文档</li>
+            <li>添加代码注释</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>易企签智能文档编辑器</h2>
+          <p>一个本土化开源智能文档编辑平台</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-links-group">
+            <h3>链接</h3>
+            <ul>
+              <li><a href="https://docs.signit.cn" target="_blank">在线体验</a></li>
+              <li><a href="https://github.com/SignitDoc/open-editor" target="_blank">GitHub 仓库</a></li>
+              <li><a href="https://github.com/SignitDoc/open-editor/issues" target="_blank">问题反馈</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 易企签智能文档编辑器. 基于 Apache 2.0 许可协议开源.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
