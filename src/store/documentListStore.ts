@@ -1,15 +1,23 @@
 import { defineStore } from "pinia"
 import { DocumentItem } from "@/types"
 import { Message } from "@/utils"
+import { initDocList } from "@/pages/document-home/doc-list"
 
 // 文档列表存储
 const useDocumentListStore = defineStore("DOCUMENT_LIST", {
   state: () => {
     return {
+      isInit: false, // 是否初始化，false显示doc-list.ts的数据,true显示listData
       listData: [] as Array<DocumentItem>
     }
   },
   actions: {
+    setInit(){
+      if(this.isInit) return
+
+      this.isInit = true
+      this.listData = initDocList as Array<any>
+    },
     create(doc) {
       this.listData.push(doc)
     },
