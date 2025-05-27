@@ -20,21 +20,21 @@
                 <div
                   v-if="item.type === 'word'"
                   v-html="item.contentHTML"
-                  :style="{ width: 100 * (793 / 314) + '%', transformOrigin: '0px -15px', scale: 314 / 793 }"
+                  :style="{ width: 100 * (793 / 230) + '%', transformOrigin: '0px -15px', scale: 230 / 793 }"
                 ></div>
                 <img v-else-if="item.baseImg" :src="item.baseImg" class="excel-preview" />
                 <div
                   v-else-if="item.type === 'markdown'"
                   :id="`markdown-${item._id}-all`"
-                  :style="{ width: 100 * (793 / 314) + '%', transformOrigin: '0px -15px', scale: 314 / 793 }"
+                  :style="{ width: 100 * (793 / 230) + '%', transformOrigin: '0px -15px', scale: 230 / 793 }"
                 ></div>
                 <div
                   v-if="item.svgHtml"
                   v-html="item.svgHtml"
                   :style="{
-                    width: 100 * (793 / 314) + '%',
+                    width: 100 * (793 / 230) + '%',
                     transformOrigin: '0px 0px',
-                    scale: 314 / 793
+                    scale: 230 / 793
                   }"
                 ></div>
               </div>
@@ -53,7 +53,7 @@
               <div class="preview-content">
                 <div
                   v-html="item.contentHTML"
-                  :style="{ width: 100 * (793 / 314) + '%', transformOrigin: '0px -15px', scale: 314 / 793 }"
+                  :style="{ width: 100 * (793 / 230) + '%', transformOrigin: '0px -15px', scale: 230 / 793 }"
                 ></div>
               </div>
             </div>
@@ -104,7 +104,7 @@
               <div class="preview-content">
                 <div
                   :id="`markdown-${item._id}`"
-                  :style="{ width: 100 * (793 / 314) + '%', transformOrigin: '0px -15px', scale: 314 / 793 }"
+                  :style="{ width: 100 * (793 / 230) + '%', transformOrigin: '0px -15px', scale: 230 / 793 }"
                 ></div>
               </div>
             </div>
@@ -123,7 +123,7 @@
               <div class="preview-content">
                 <div
                   v-html="item.svgHtml"
-                  :style="{ width: 100 * (793 / 314) + '%', transformOrigin: '0px 0px', scale: 314 / 793 }"
+                  :style="{ width: 100 * (793 / 230) + '%', transformOrigin: '0px 0px', scale: 230 / 793 }"
                 ></div>
               </div>
             </div>
@@ -144,9 +144,9 @@
                   v-if="item.svgHtml"
                   v-html="item.svgHtml"
                   :style="{
-                    width: 100 * (793 / 314) + '%',
+                    width: 100 * (793 / 230) + '%',
                     transformOrigin: '0px 0px',
-                    scale: 314 / 793
+                    scale: 230 / 793
                   }"
                 ></div>
               </div>
@@ -270,15 +270,15 @@ defineExpose({
     box-sizing: border-box;
     .content-scale-item {
       position: relative;
-      width: 314px;
-      height: 440px;
+      width: 230px;
+      height: 320px;
       background-color: #fff;
       box-shadow: 0px 0px 3px 2px #ddd;
       box-sizing: border-box;
       padding: 10px;
 
       .preview-content {
-        height: 420px;
+        height: 300px;
         overflow: hidden;
         .excel-preview {
           width: 100%;

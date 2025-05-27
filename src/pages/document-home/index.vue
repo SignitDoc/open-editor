@@ -152,7 +152,7 @@
 </template>
 
 <script lang="ts" setup>
-import { reactive, ref, computed } from "vue"
+import { reactive, ref, computed, onMounted } from "vue"
 import { useRouter } from "vue-router"
 
 import { Delete, Menu, Search } from "@element-plus/icons-vue"
@@ -181,6 +181,10 @@ const documentListStore = useDocumentListStore()
 
 const filesTableRef = ref()
 const templateLibraryDialogRef = ref()
+
+onMounted(()=>{
+  documentListStore.setInit()
+})
 /* ====================================== 文件搜索 ======================================*/
 const searchForm = reactive({
   type: "all",
@@ -191,6 +195,7 @@ const searchForm = reactive({
 const activeType = computed(() => {
   return allTypeOptions.find(item => item.value === searchForm.type)
 })
+
 
 /* ================================ 创建文档 ================================ */
 const createLoading = ref(false)
